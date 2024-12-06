@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="overlay">
+    
+    <form onsubmit="validateform(); event.preventDefault()">
+        <h1>Login Form</h1> <br> 
+
+        <label for="name"> First Name:</label>
+        <input type="text" id="firstname" placeholder="First Name">
+        <small class="error"> </small> <br> <br>
+
+        <label for="name"> Last Name:</label>
+        <input type="text" id="lastname" placeholder="Last Name">
+        <small class="error"> </small> <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+        <small class="error"> </small> <br> <br>
+
+
+        <label for="Password">Password:</label>
+        <input type="password" id="password" placeholder="Your Password">
+        <small class="error"> </small> <br> <br>
+
+        <label for="Address">Address:</label>
+            <textarea name="Address" id="address" placeholder="Your Address" rows="3"></textarea>
+        <small class="error"> </small> <br> <br>
+
+        <label for="Contact">Contact No:</label>
+        <input type="number" id="contact" placeholder="Your number">
+        <small class="error"> </small> <br>
+        
+            <button type="submit">Submit</button>
+        
+        <p id="success"></p>
+
+    </form>    
+</div>
+
+ <script src="index.js"></script>
+</body>
+</html>
